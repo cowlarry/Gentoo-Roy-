@@ -1,0 +1,39 @@
+#REMEMBER TO CONFIGURE NOT KEEP THE EXAMPLE BC I HAVENT TEST IT YET 
+## These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+# deezflahgz
+COMMON_FLAGS="-O2 -pipe -march=native"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+MAKEOPTS="-j4 -j4"
+# use flahgz
+USE="elogind -systemd -aqua -css -a52 -cjk -gnome -ldap -3df -berkdb \
+     -clamav -coreaudio -ios -ipod -ieee1394 -emacs -xemacs -gtk -motif \
+     -emboss -3dfx -altivec -smartcard -ibm x xinerama -nls -nas \
+     -neon -nntp -cups -quicktime nvidia"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+# EMERGE_DEFAULT_OPTS is set automatically by livecd-tools autoconfig during first live boot.
+# This should be equal to number of processors, see "man emerge" for details.
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --jobs=4 --load-average=4"
+VIDEO_CARDS="intel"
+PORTAGE_NICENESS=19
+PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
+FEATURES="binpkg-logs buildpkg cgroup collision-protect downgrade-backup ipc-sandbox network-sandbox parallel-install sign"
+#RUBY_TARGETS="ruby24 ruby25"
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+GENTOO_MIRRORS="http://ftp.twaren.net/Linux/Gentoo"
+GRUB_PLATFORMS="efi-64"
+
+~                             
