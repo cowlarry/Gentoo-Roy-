@@ -1,12 +1,12 @@
 # Gentoo-Roy-
 ---------------------------------------------------------------
-lsblk - to display how much partition you have before configure it 
-now you should not see the mountpoints 
+  - lsblk - to display how much partition you have before configure it -
+ - now you should not see the mountpoints 
 if desired, run these:
-umount -f -l /mnt/gentoo/boot/efi &
-umount -f -l /mnt/gentoo/boot/ &
-swapoff /dev/{SWAP} &
-umount /mnt/gentoo/home 
+ - umount -f -l /mnt/gentoo/boot/efi &
+ - umount -f -l /mnt/gentoo/boot/ &
+ - swapoff /dev/{SWAP} &
+ - umount /mnt/gentoo/home 
 -------------------
 lets configure the disk
 cfdisk /dev/nvme0n1
