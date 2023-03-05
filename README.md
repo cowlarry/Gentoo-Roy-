@@ -2,6 +2,6 @@
   - arch=x86_64
   - bootloader=grub:2
   - profile: openrc
-  - kernel: linux zen1 5.19.13
+  - kernel: linux zen1 5.19.13 or newer
 ### Looking for gentoo linux amd64 handbook for a complete reference
 ### https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Stage
